@@ -1,3 +1,13 @@
+/* Category IDs stay stable even while a category has no published projects. */
+window.WEBSOLVE_CATEGORIES = [
+  { id: "food", name: "식품", english: "FOOD", description: "식품의 특징과 정보를 설득력 있게 보여주는 작업" },
+  { id: "cafe", name: "카페·음료", english: "CAFE & DRINK", description: "맛과 분위기를 함께 전하는 카페·음료 작업" },
+  { id: "health", name: "헬스·웰니스", english: "HEALTH & WELLNESS", description: "복잡한 정보를 명확하게 정리하는 헬스·웰니스 작업" },
+  { id: "beauty", name: "뷰티", english: "BEAUTY", description: "제품의 사용감과 브랜드 인상을 보여주는 뷰티 작업" },
+  { id: "living", name: "리빙", english: "LIVING", description: "생활 속 쓰임과 디테일을 전하는 리빙 작업" },
+  { id: "retail", name: "리테일·유통", english: "RETAIL", description: "여러 상품을 보기 좋고 고르기 쉽게 구성한 작업" }
+];
+
 /* Add a project here, then place its images under this site's assets or projects folder.
    Only entries with status "published" appear on the site. */
 window.WEBSOLVE_PROJECTS = [
@@ -6,7 +16,8 @@ window.WEBSOLVE_PROJECTS = [
     slug: "noctave",
     title: "NOCTAVE",
     brand: "NOCTAVE",
-    category: "식품·음료",
+    categoryId: "cafe",
+    category: "카페·음료",
     workType: "상세페이지 · 기획 + 디자인",
     projectType: "detail-page",
     isSample: true,
@@ -40,7 +51,8 @@ window.WEBSOLVE_PROJECTS = [
     slug: "afternoon-select",
     title: "AFTERNOON SELECT",
     brand: "AFTERNOON SELECT",
-    category: "리테일",
+    categoryId: "retail",
+    category: "리테일·유통",
     workType: "상품 리스트 · 웹디자인",
     projectType: "website",
     isSample: true,
